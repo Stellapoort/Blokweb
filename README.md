@@ -95,6 +95,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  <img src="readme-images/nietgoed.png" width="375px" alt="breakdown van nog een dynamisch deel">
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
