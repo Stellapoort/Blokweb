@@ -42,7 +42,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/pagina-1.png" width="375px" alt="blog pagina">
+  <img src="readme-images/pagina-1.png" width="375px" alt="ons verhaal pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
@@ -111,8 +111,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
+  - punt 1: logo in het midden krijgen
+  - punt 2: 
   - nog een punt
   - ...
 
