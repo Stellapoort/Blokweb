@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   hier je startniveau blauw
 
   #### Je focus:
-  Responsive
+  details
  
 </details>
 
@@ -58,7 +58,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+Lijst met je bevindingen die in de test naar voren kwamen:
  86 fouten gevalideerd.
  Niet kunnen scrollen al je het scherm verticaal houdt.
  Je kan goed tabben door de website.
@@ -112,9 +112,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - punt 1: logo in het midden krijgen
-  - punt 2: 
-  - nog een punt
-  - ...
+  - punt 2: Logo in H1 zetten
+  - Punt 3: hr weghalen en border op de nav zetten
+  - Punt 4: alle linkjes naar de andere pagina linken
+  - Punt 5: main toevoegen
 
 </details>
 
@@ -144,9 +145,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - Punt 1: alle buttons een link maken
+  - Punt 2: Css stuctureren
+  - Punt 3: werken aan het hamburger menu
 - ...
 
 </details>
