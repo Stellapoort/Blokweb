@@ -5,7 +5,7 @@
 /* Basis styling */
 *, *::after, *::before {
   box-sizing: border-box;  
-  background-color: rgb(250, 255, 255);
+  background-color: #fcf9f7;
 }
 /* Aangepaste eigenschappen */
 :root {
@@ -16,28 +16,83 @@
 /* Algemene stijlregels */
 * {
   box-sizing: border-box;
+  margin:0 ;
 }
 
 
 /* menu balk */
-div.sticky {
-position: -webkit-sticky;
-position: sticky;
-top: 0;
-background-color: var (--color-background);
-padding: 50px;
-font-size: 20px;
+
+header ul.open {
+	display: block;
+  padding: 0;
+  left: 0;
+  list-style: none; /* Verwijder de standaard lijststijl */
+  background-color: white;
+  box-shadow: 5em 0 5em rgba(0, 0, 0, 0.6);
 }
+
+header ul li {
+  list-style-type: none; /* Verwijder standaard opsommingstekens */
+  background: none; /* Verwijder achtergrondkleur */
+  text-decoration: none; /* Verwijder onderstreping van links */
+  color: #000000; 
+  margin-bottom: 2em; /* Voeg witruimte toe tussen de links */
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+header ul {
+  width: 85vw;
+  height: 100vh;
+  position: absolute;
+  display: none;
+  top: 100%;
+  z-index: 2;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+header nav {
+	display: flex;
+	position: relative;
+}
+
+
+header ul li a {
+  text-decoration: none ;
+  color: #000000 ;
+  background: none;
+}
+
+/* hamburger */
+
+.menu-icon {
+  position: fixed;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  background-color: #ffffff;
+  z-index: 3;
+}
+
+
+
+
+
+
+
+
 
 
 /* Stijl voor h1 elementen */
 h1 {
   font-family: 'Times New Roman', Times, serif;
   font-size: 0.5em;
-  background-color: #ffffff;
   height: 3em;
   justify-content: center;
-  
 }
 
 /* logo */
@@ -47,9 +102,9 @@ h1 {
   align-items: center;
   margin: 0; 
   text-decoration: none;
-  background:none
-  
-
+  background:none;
+  margin: 2em;
+  margin-top: 2em;
 }
 
 h1 img {
@@ -64,7 +119,30 @@ main img {
   max-width: 100%;
   height: auto;
   margin-bottom: 15px;
+  display: inline-block; /* Laat de afbeeldingen naast elkaar staan */
 }
+
+
+/* de New in images */
+
+.image-container {
+  white-space: nowrap; /* Zorg ervoor dat de afbeeldingen in één regel blijven */
+  overflow-x: auto; /* Voeg een horizontale schuifbalk toe als de ruimte niet voldoende is */
+}
+
+/* Zorg ervoor dat de afbeeldingen in de container vallen */
+.image-container img {
+  display: inline-block;
+  margin-right: 15px; /* Voeg ruimte toe tussen de afbeeldingen */
+  margin: 0;
+  padding: 0.3em;
+  width: 79%;
+  margin-bottom: 1em;
+}
+
+
+
+
 
 
 /* Stijl voor knoppen binnen h2 elementen */
@@ -73,13 +151,114 @@ main a {
   display: inline-block;
 }
 
-main button {
+main link {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
 }
+
+span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative; /* Voeg positionele context toe aan de link */
+  color: #000000;
+}
+
+span {
+  background-color: #ffffff;
+  border: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1em;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); /* Center de knop */
+  z-index: 1; /* Zorg ervoor dat de knop bovenop de afbeelding staat */
+ 
+}
+
+span img {
+  max-width: 100%;
+  max-height: 50%;
+  height: auto;
+  margin: 0;
+}
+
+/*section images*/
+
+.home section img {
+padding: 1em;
+}
+
+
+/* Stijl voor tekst */
+
+h2{
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+h4 {
+  font-size: 2em;
+  margin-left: 0.5em;
+  margin-bottom: 1em;
+}
+
+p {
+  color: grey; 
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+
+
+/* footer */
+
+
+
+
+
+
+
+
+
+/**************/
+/*  pagina 2  */ 
+/**************/
+
+
+.stores body{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+/* De map*/
+
+iframe {
+  width: 100%; 
+  height: 450px; 
+  border: none; 
+  margin-top: 20px; 
+}
+
+
+/* buttons */
 
 button {
   display: flex;
@@ -90,7 +269,8 @@ button {
 }
 
 button {
-  background-color: #ffffff;
+  background-color: #212b36;
+  color: #ffffff;
   border: none;
   font-family: 'Times New Roman', Times, serif;
   font-size: 1em;
@@ -103,47 +283,8 @@ button {
   z-index: 1; /* Zorg ervoor dat de knop bovenop de afbeelding staat */
 }
 
-button:hover {
-  background-color: #13172d; /* Voeg een hover-effect toe */
-  color: #ffffff;
+/* images */
+
+.stores{
+  padding: 0;
 }
-
-button img {
-  max-width: 100%;
-  max-height: 50%;
-  height: auto;
-}
-
-/* Stijl voor teksten */
-
-h2{
-  display: flex;
-  justify-content: center;
-}
-
-h3 {
-  display: flex;
-  justify-content: space-around;
-}
-
-h4 {
-  font-size: 2em;
-  margin-bottom: 0.5em; 
-}
-
-p {
-  color: grey; 
-}
-
-
-
-/* footer */
-footer {
-  background-color: #f2e9e9;
-  color: #000000;
-  text-align: center;
-  padding: 10px;
-  bottom: 0;
-  width: 100%;
-}
-
