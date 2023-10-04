@@ -2,9 +2,6 @@
 console.log("hi");
 
 
-
-
-
 // hamburge menu //
 
 var HamburgerButton = document.querySelector("button")
@@ -15,31 +12,39 @@ HamburgerButton.onclick = function () {
 
 }
 
-  
+
+// geluidje //
+
+var images = document.querySelectorAll('img');
+
+images.forEach(function(image) {
+  image.addEventListener('click', function() {
+    var audio = new Audio("sound/buttonklik.mp3");
+    audio.play();
+  });
+});
+
+
+var buttons = document.querySelectorAll('button');
+
+buttons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    var audio = new Audio("sound/buttonklik.mp3");
+    audio.play();
+  });
+});
+
+
+var spans = document.querySelectorAll('span');
+
+spans.forEach(function(span) {
+  span.addEventListener('click', function() {
+    var audio = new Audio("sound/buttonklik.mp3");
+    audio.play();
+  });
+});
 
 
 
 
 
-
-
-// //benden scrollen pagina //
-
-//   document.querySelectorAll('button').forEach(function(button) {
-//     button.addEventListener('click', function(event) {
-//       // Voorkom standaardgedrag (navigeren naar de bovenkant van de pagina)
-//       event.preventDefault();
-
-//       // Haal de id van de bijbehorende sectie uit de href van de link
-//       var targetId = this.parentElement.getAttribute('href').substring(1);
-
-//       // Zoek de doelsectie op basis van de id
-//       var targetSection = document.getElementById(targetId);
-
-//       // Scroll naar de bovenkant van de doelsectie
-//       window.scrollTo({
-//         top: targetSection.offsetTop,
-//         behavior: 'smooth'
-//       });
-//     });
-//   });
